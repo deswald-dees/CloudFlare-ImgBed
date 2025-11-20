@@ -10,8 +10,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-      - name: NPM install
-        run: npm install -g wrangler@4.49.0
+      - name: Perform npm install
+        run: npm install
       - name: Publish to Cloudflare Pages
         run: |
           PROJECT_NAME=cfp-imghub
